@@ -87,12 +87,12 @@ export const MeetingsCalendar = ({
     language && new Intl.Locale(language).language === 'de'
       ? deLocale
       : language && new Intl.Locale(language).language === 'es'
-      ? esLocale
-      : language && new Intl.Locale(language).language === 'fr'
-      ? frLocale
-      : language && new Intl.Locale(language).language === 'pt'
-      ? ptLocale
-      : undefined;
+        ? esLocale
+        : language && new Intl.Locale(language).language === 'fr'
+          ? frLocale
+          : language && new Intl.Locale(language).language === 'pt'
+            ? ptLocale
+            : undefined;
   const [detailsMeetingId, setDetailsMeetingId] = useState<
     | { meetingId: string; uid: string; recurrenceId: string | undefined }
     | undefined

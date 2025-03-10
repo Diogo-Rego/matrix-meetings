@@ -21,13 +21,13 @@ import 'reflect-metadata';
 import { registerDateRangeFormatter } from './src/dateRangeFormatter';
 
 // @ts-ignore Ignore error. TypeScript complains, even if 'resolveJsonModule' is enabled.
-import translationDe from './src/static/locales/pt/translation.json';
+import translationPt from './src/static/locales/pt/translation.json';
 // @ts-ignore Ignore error. TypeScript complains, even if 'resolveJsonModule' is enabled.
 import translationEn from './src/static/locales/en/translation.json';
 // @ts-ignore Ignore error. TypeScript complains, even if 'resolveJsonModule' is enabled.
-import translationEn from './src/static/locales/fr/translation.json';
+import translationFr from './src/static/locales/fr/translation.json';
 // @ts-ignore Ignore error. TypeScript complains, even if 'resolveJsonModule' is enabled.
-import translationEn from './src/static/locales/es/translation.json';
+import translationEs from './src/static/locales/es/translation.json';
 // @ts-ignore Ignore error. TypeScript complains, even if 'resolveJsonModule' is enabled.
 import translationDe from './src/static/locales/de/translation.json';
 
@@ -41,7 +41,10 @@ i18next.use(i18nextBackend).init({
     escapeValue: false,
   },
   resources: {
+    pt: { translation: translationPt },
     en: { translation: translationEn },
+    fr: { translation: translationFr },
+    es: { translation: translationEs },
     de: { translation: translationDe },
   },
 });

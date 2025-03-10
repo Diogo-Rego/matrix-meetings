@@ -16,7 +16,10 @@
 
 import {
   deDE,
+  esES,
+  frFR,
   enUS,
+  ptBR,
   LocalizationProvider as MuiLocalizationProvider,
 } from '@mui/x-date-pickers';
 import { PropsWithChildren } from 'react';
@@ -26,8 +29,18 @@ import { AdapterLuxonWeekday } from './AdapterLuxonWeekday';
 export function LocalizationProvider({ children }: PropsWithChildren<{}>) {
   const { i18n } = useTranslation();
   const language: string | undefined = i18n.languages?.[0];
-  const locale =
-    language && new Intl.Locale(language).language === 'de' ? deDE : enUS;
+  let locale;
+  if (language && new Intl.Locale(language).language === 'de') {
+    locale = deDE;
+  } else if (language && new Intl.Locale(language).language === 'es') {
+    locale = esES;
+  } else if (language && new Intl.Locale(language).language === 'fr') {
+    locale = frFR;
+  } else if (language && new Intl.Locale(language).language === 'pt') {
+    locale = ptBR;
+  } else {
+    locale = enUS;
+  }
 
   return (
     <MuiLocalizationProvider

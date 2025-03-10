@@ -24,7 +24,7 @@
   "commandHelp": [
     "<p>Available commands:</p>",
     "<ul>",
-    "<li><code>!meeting lang &lt;en|de&gt;</code> (Change the language of the bot in this room.)</li>",
+    "<li><code>!meeting lang &lt;pt|en|fr|es|de&gt;</code> (Change the language of the bot in this room.)</li>",
     "<li><code>!meeting setup</code> (Adds the calendar to the room.)</li>",
     "<li><code>!meeting status</code> (Checks the ability to add the calendar.)</li>",
     "</ul>"
@@ -89,9 +89,9 @@
       "daily_one": "Every day$t(recurrenceEditor.ruleText.recurrenceEnd, {\"context\": \"{{recurrenceEnd}}\" })",
       "daily_other": "Every {{count}} days$t(recurrenceEditor.ruleText.recurrenceEnd, {\"context\": \"{{recurrenceEnd}}\" })",
       "monthly_bymonthday_one": "Every month on the $t(recurrenceEditor.ruleText.ordinal, {\"count\": {{bymonthday}}, \"ordinal\": true })$t(recurrenceEditor.ruleText.recurrenceEnd, {\"context\": \"{{recurrenceEnd}}\" })",
-      "monthly_bymonthday_other": "Every {{count}} months on the $t(recurrenceEditor.ruleText.ordinal, {\"count\": {{bymonthday}}, \"ordinal\": true })$t(recurrenceEditor.ruleText.recurrenceEnd, {\"context\": \"{{recurrenceEnd}}\" })",
+      "monthly_bymonthday_other": "Every {{count}} month on the $t(recurrenceEditor.ruleText.ordinal, {\"count\": {{bymonthday}}, \"ordinal\": true })$t(recurrenceEditor.ruleText.recurrenceEnd, {\"context\": \"{{recurrenceEnd}}\" })",
       "monthly_byweekday_one": "Every month on the {{ordinalLabel}} {{byweekday}}$t(recurrenceEditor.ruleText.recurrenceEnd, {\"context\": \"{{recurrenceEnd}}\" })",
-      "monthly_byweekday_other": "Every {{count}} months on the {{ordinalLabel}} {{byweekday}}$t(recurrenceEditor.ruleText.recurrenceEnd, {\"context\": \"{{recurrenceEnd}}\" })",
+      "monthly_byweekday_other": "Every {{count}} month on the {{ordinalLabel}} {{byweekday}}$t(recurrenceEditor.ruleText.recurrenceEnd, {\"context\": \"{{recurrenceEnd}}\" })",
       "monthly_simple_one": "Every month$t(recurrenceEditor.ruleText.recurrenceEnd, {\"context\": \"{{recurrenceEnd}}\" })",
       "monthly_simple_other": "Every {{count}} months$t(recurrenceEditor.ruleText.recurrenceEnd, {\"context\": \"{{recurrenceEnd}}\" })",
       "ordinal_ordinal_one": "{{count}}st",
@@ -105,13 +105,13 @@
       "weekly_all_one": "Every week$t(recurrenceEditor.ruleText.recurrenceEnd, {\"context\": \"{{recurrenceEnd}}\" })",
       "weekly_all_other": "Every {{count}} weeks$t(recurrenceEditor.ruleText.recurrenceEnd, {\"context\": \"{{recurrenceEnd}}\" })",
       "weekly_some_one": "Every week on {{weekdays, list}}$t(recurrenceEditor.ruleText.recurrenceEnd, {\"context\": \"{{recurrenceEnd}}\" })",
-      "weekly_some_other": "Every {{count}} weeks on {{weekdays, list}}$t(recurrenceEditor.ruleText.recurrenceEnd, {\"context\": \"{{recurrenceEnd}}\" })",
+      "weekly_some_other": "Every {{count}} week on {{weekdays, list}}$t(recurrenceEditor.ruleText.recurrenceEnd, {\"context\": \"{{recurrenceEnd}}\" })",
       "weekly_weekdays_one": "Every weekday$t(recurrenceEditor.ruleText.recurrenceEnd, {\"context\": \"{{recurrenceEnd}}\" })",
-      "weekly_weekdays_other": "Every {{count}} weeks on weekdays$t(recurrenceEditor.ruleText.recurrenceEnd, {\"context\": \"{{recurrenceEnd}}\" })",
+      "weekly_weekdays_other": "Every {{count}} week on weekdays$t(recurrenceEditor.ruleText.recurrenceEnd, {\"context\": \"{{recurrenceEnd}}\" })",
       "yearly_bymonthday_one": "Every {{monthLabel}} on the $t(recurrenceEditor.ruleText.ordinal, {\"count\": {{bymonthday}}, \"ordinal\": true })$t(recurrenceEditor.ruleText.recurrenceEnd, {\"context\": \"{{recurrenceEnd}}\" })",
-      "yearly_bymonthday_other": "Every {{count}} years on the $t(recurrenceEditor.ruleText.ordinal, {\"count\": {{bymonthday}}, \"ordinal\": true }) of {{monthLabel}}$t(recurrenceEditor.ruleText.recurrenceEnd, {\"context\": \"{{recurrenceEnd}}\" })",
+      "yearly_bymonthday_other": "Every {{count}} year on the $t(recurrenceEditor.ruleText.ordinal, {\"count\": {{bymonthday}}, \"ordinal\": true }) of {{monthLabel}}$t(recurrenceEditor.ruleText.recurrenceEnd, {\"context\": \"{{recurrenceEnd}}\" })",
       "yearly_byweekday_one": "Every {{monthLabel}} on the {{ordinalLabel}} {{byweekday}}$t(recurrenceEditor.ruleText.recurrenceEnd, {\"context\": \"{{recurrenceEnd}}\" })",
-      "yearly_byweekday_other": "Every {{count}} years on the {{ordinalLabel}} {{byweekday}} of {{monthLabel}}$t(recurrenceEditor.ruleText.recurrenceEnd, {\"context\": \"{{recurrenceEnd}}\" })",
+      "yearly_byweekday_other": "Every {{count}} year on the {{ordinalLabel}} {{byweekday}} of {{monthLabel}}$t(recurrenceEditor.ruleText.recurrenceEnd, {\"context\": \"{{recurrenceEnd}}\" })",
       "yearly_simple_one": "Every year$t(recurrenceEditor.ruleText.recurrenceEnd, {\"context\": \"{{recurrenceEnd}}\" })",
       "yearly_simple_other": "Every {{count}} years$t(recurrenceEditor.ruleText.recurrenceEnd, {\"context\": \"{{recurrenceEnd}}\" })"
     }
@@ -140,8 +140,11 @@
     "introLanguage": [
       "Information on the language setting: To enable communication in your language, you can use the following commands:  ",
       "<ul>",
+      "<li>Change language to Portuguese: <code>!meeting lang pt</code></li>",
       "<li>Change language to English: <code>!meeting lang en</code></li>",
-      "<li>Sprache auf Deutsch umstellen: <code>!meeting lang de</code></li>",
+      "<li>Change language to French : <code>!meeting lang fr</code></li>",
+      "<li>Change language to Spanish: <code>!meeting lang es</code></li>",
+      "<li>Change language to German: <code>!meeting lang de</code></li>",
       "</ul>"
     ],
     "languageWasChanged": "The language was changed to <b>{{locale}}</b>.",

@@ -166,7 +166,7 @@
     }
   },
   "meetingHasBreakoutSessionsWarning": {
-    "message": "If you want to change start or end time of this meeting, existing breakout sessions will not be moved!",
+    "message": "If you want to change start or end the time of this meeting, existing breakout sessions will not be moved!",
     "title": "The meeting already has breakout sessions."
   },
   "meetingInvitationGuard": {
@@ -174,8 +174,8 @@
   },
   "meetingList": {
     "groupTitle": "{{date, datetime}}",
-    "noBreakoutSessionsScheduled": "No breakout sessions scheduled that match the selected filters.",
-    "noMeetingsScheduled": "No meetings scheduled that match the selected filters.",
+    "noBreakoutSessionsScheduled": "There are no breakout sessions scheduled that match the selected filters.",
+    "noMeetingsScheduled": "There are no meetings scheduled that match the selected filters.",
     "openInvitationsDetail": "Please join all meeting rooms.",
     "openInvitationsTitle": "You have open invitations.",
     "title": "Meetings"
@@ -285,7 +285,7 @@
         "byMonthday": "On day",
         "byMonthdayLong": "The meeting is repeated yearly on {{nthMonthday}} {{month}}",
         "byWeekday": "On the",
-        "byWeekdayLong": "The meeting is repeated yearly at {{ordinalLabel}} {{weekday}} of {{month}}",
+        "byWeekdayLong": "The meeting is repeated yearly on {{ordinalLabel}} {{weekday}} of {{month}}",
         "byWeekdayOf": "of",
         "customRuleMode": "Custom Rule",
         "invalidInput": "Invalid input",
@@ -321,7 +321,7 @@
       "never": "Never",
       "neverLong": "The meeting is repeated forever",
       "untilDate": "On",
-      "untilDateInput": "Date at which the recurring meetings ends",
+      "untilDateInput": "Date at which the recurring meeting ends",
       "untilDateInputInvalid": "Invalid date",
       "untilDateInputOpenDatePicker": "Choose date at which the recurring meeting ends, selected date is {{date, datetime}}",
       "untilDateLong": "The meeting is repeated till {{date,datetime}}"
@@ -333,7 +333,7 @@
       "daily_one": "Every day$t(recurrenceEditor.ruleText.recurrenceEnd, {\"context\": \"{{recurrenceEnd}}\" })",
       "daily_other": "Every {{count}} days$t(recurrenceEditor.ruleText.recurrenceEnd, {\"context\": \"{{recurrenceEnd}}\" })",
       "monthly_bymonthday_one": "Every month on the $t(recurrenceEditor.ruleText.ordinal, {\"count\": {{bymonthday}}, \"ordinal\": true })$t(recurrenceEditor.ruleText.recurrenceEnd, {\"context\": \"{{recurrenceEnd}}\" })",
-      "monthly_bymonthday_other": "Every {{count}} months on the $t(recurrenceEditor.ruleText.ordinal, {\"count\": {{bymonthday}}, \"ordinal\": true })$t(recurrenceEditor.ruleText.recurrenceEnd, {\"context\": \"{{recurrenceEnd}}\" })",
+      "monthly_bymonthday_other": "Every {{count}} month on the $t(recurrenceEditor.ruleText.ordinal, {\"count\": {{bymonthday}}, \"ordinal\": true })$t(recurrenceEditor.ruleText.recurrenceEnd, {\"context\": \"{{recurrenceEnd}}\" })",
       "monthly_byweekday_one": "Every month on the {{ordinalLabel}} {{byweekday}}$t(recurrenceEditor.ruleText.recurrenceEnd, {\"context\": \"{{recurrenceEnd}}\" })",
       "monthly_byweekday_other": "Every {{count}} months on the {{ordinalLabel}} {{byweekday}}$t(recurrenceEditor.ruleText.recurrenceEnd, {\"context\": \"{{recurrenceEnd}}\" })",
       "monthly_simple_one": "Every month$t(recurrenceEditor.ruleText.recurrenceEnd, {\"context\": \"{{recurrenceEnd}}\" })",
@@ -349,13 +349,13 @@
       "weekly_all_one": "Every week$t(recurrenceEditor.ruleText.recurrenceEnd, {\"context\": \"{{recurrenceEnd}}\" })",
       "weekly_all_other": "Every {{count}} weeks$t(recurrenceEditor.ruleText.recurrenceEnd, {\"context\": \"{{recurrenceEnd}}\" })",
       "weekly_some_one": "Every week on {{weekdays, list}}$t(recurrenceEditor.ruleText.recurrenceEnd, {\"context\": \"{{recurrenceEnd}}\" })",
-      "weekly_some_other": "Every {{count}} weeks on {{weekdays, list}}$t(recurrenceEditor.ruleText.recurrenceEnd, {\"context\": \"{{recurrenceEnd}}\" })",
+      "weekly_some_other": "Every {{count}} week on {{weekdays, list}}$t(recurrenceEditor.ruleText.recurrenceEnd, {\"context\": \"{{recurrenceEnd}}\" })",
       "weekly_weekdays_one": "Every weekday$t(recurrenceEditor.ruleText.recurrenceEnd, {\"context\": \"{{recurrenceEnd}}\" })",
-      "weekly_weekdays_other": "Every {{count}} weeks on weekdays$t(recurrenceEditor.ruleText.recurrenceEnd, {\"context\": \"{{recurrenceEnd}}\" })",
+      "weekly_weekdays_other": "Every {{count}} week on weekdays$t(recurrenceEditor.ruleText.recurrenceEnd, {\"context\": \"{{recurrenceEnd}}\" })",
       "yearly_bymonthday_one": "Every {{monthLabel}} on the $t(recurrenceEditor.ruleText.ordinal, {\"count\": {{bymonthday}}, \"ordinal\": true })$t(recurrenceEditor.ruleText.recurrenceEnd, {\"context\": \"{{recurrenceEnd}}\" })",
-      "yearly_bymonthday_other": "Every {{count}} years on the $t(recurrenceEditor.ruleText.ordinal, {\"count\": {{bymonthday}}, \"ordinal\": true }) of {{monthLabel}}$t(recurrenceEditor.ruleText.recurrenceEnd, {\"context\": \"{{recurrenceEnd}}\" })",
+      "yearly_bymonthday_other": "Every {{count}} year on the $t(recurrenceEditor.ruleText.ordinal, {\"count\": {{bymonthday}}, \"ordinal\": true }) of {{monthLabel}}$t(recurrenceEditor.ruleText.recurrenceEnd, {\"context\": \"{{recurrenceEnd}}\" })",
       "yearly_byweekday_one": "Every {{monthLabel}} on the {{ordinalLabel}} {{byweekday}}$t(recurrenceEditor.ruleText.recurrenceEnd, {\"context\": \"{{recurrenceEnd}}\" })",
-      "yearly_byweekday_other": "Every {{count}} years on the {{ordinalLabel}} {{byweekday}} of {{monthLabel}}$t(recurrenceEditor.ruleText.recurrenceEnd, {\"context\": \"{{recurrenceEnd}}\" })",
+      "yearly_byweekday_other": "Every {{count}} year on the {{ordinalLabel}} {{byweekday}} of {{monthLabel}}$t(recurrenceEditor.ruleText.recurrenceEnd, {\"context\": \"{{recurrenceEnd}}\" })",
       "yearly_simple_one": "Every year$t(recurrenceEditor.ruleText.recurrenceEnd, {\"context\": \"{{recurrenceEnd}}\" })",
       "yearly_simple_other": "Every {{count}} years$t(recurrenceEditor.ruleText.recurrenceEnd, {\"context\": \"{{recurrenceEnd}}\" })"
     },
@@ -388,7 +388,7 @@
     "groupNumberErrorMessage": "There are not enough participants for the number of groups you have entered.",
     "groups": "Groups",
     "groupTitleDefaultValue": "Group {{index}}",
-    "meetingIsOver": "The meeting is over you can not create any new breakout sessions.",
+    "meetingIsOver": "The meeting is over so you can not create any new breakout sessions.",
     "notAssignedMessage": "Some participants are not assigned to a group.",
     "notAssignedTitle": "Note",
     "startAt": "Start at"
